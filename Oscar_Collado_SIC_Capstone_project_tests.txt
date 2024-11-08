@@ -1,0 +1,80 @@
+>>> python -m unittest test_city_simulation.py
+testing ...
+# 1
+>stadium add Bernabeu
+Stadium Bernabeu successfully added to the system. "Test passsed!"
+# 2
+>client add Billy
+Client Billy successfully added to the system. "Test passsed!"
+# 3
+>stadium add_event Bernabeu Futbol
+Event Futbol successfully added to Stadium Bernabeu. "Test passsed!"
+# 4
+>client buy_ticket Billy Bernabeu Futbol
+Client Billy has bought a ticket for Event Futbol. "Test passsed!"
+# 5
+>client enter Billy Bernabeu
+Client Billy entered Stadium Bernabeu "Test passsed!"
+# 6
+>stadium show_events Bernabeu
+Future events hosted in Bernabeu:
+- Futbol "Test passsed!"
+# 7
+>client show_all_clients
+Clients:
+- Billy "Test passsed!"
+# 8
+>client view_ticket_status Billy Bernabeu Futbol
+Client Billy has a ticket for Event Futbol. "Test passsed!"
+# 9
+>stadium show_attendance Bernabeu Futbol
+Attendees for the Futbol Event in Stadium Bernabeu:
+- Billy "Test passsed!"
+# 10
+>stadium show_clients Bernabeu
+Clients in Stadium Bernabeu:
+- Billy "Test passsed!"
+# 11
+>stadium show_current_events Bernabeu
+Current events hosted in Bernabeu:
+(none) "Test passsed!"
+# 12
+>client check_event_schedule Billy Bernabeu
+Schedule for Client Billy's events in Stadium Bernabeu:
+- Futbol: 07/11/24 20:53:17 "Test passsed!"
+# 13
+>client check_wait_time Billy Bernabeu
+Wait time for Client Billy to enter Stadium Bernabeu:
+10 days 2 hours. "Test passsed!"
+# 14
+>client cheer_for_team Billy Bernabeu Raven
+Client Billy just cheered for team Raven at Stadium Bernabeu!
+1 cheer in this Stadium so far.
+Raven has been cheered 1 time in this Stadium so far. "Test passsed!"
+# 15
+>client report_issue Billy Bernabeu Unamused
+Client Billy just reported an issue with Stadium Bernabeu!
+1 issue in this Stadium so far: "Unamused" "Test passsed!"
+# 16
+>client request_refund Billy Bernabeu Futbol
+Client Billy has just refunded a ticket for Event Futbol at Stadium Bernabeu. "Test passsed!"
+# 17
+>client cancel_ticket Billy Bernabeu Futbol
+Error: Billy doesn't have a ticket for Event Futbol. "Test passsed!"
+# 18
+>client leave Billy Bernabeu
+Client Billy left Stadium Bernabeu. "Test passsed!"
+# 19
+>stadium remove_event Bernabeu Futbol
+Event Futbol successfully removed from Stadium Bernabeu. "Test passsed!"
+# 20
+>stadium show_info Bernabeu
+Stadium Bernabeu:
+- Location: West coast.
+- Size: 119x69 meters.
+- Color: Red and Red. "Test passsed!"
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
